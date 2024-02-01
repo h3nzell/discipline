@@ -6,7 +6,7 @@ import {
   MagnifyingGlassIcon,
 } from '@radix-ui/react-icons';
 
-import { ProgressSlider } from '..';
+import { ProgressSlider } from '../../pages';
 
 const Header = ({ percent }) => {
   const [count, setCount] = useState(1);

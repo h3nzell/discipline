@@ -1,18 +1,16 @@
+import { motion } from 'framer-motion';
 import { Cross1Icon, MinusIcon, PlusIcon } from '@radix-ui/react-icons';
+
 import {
+  Text,
+  Flex,
   Badge,
   Button,
-  Card,
-  Flex,
   Heading,
   IconButton,
-  Text,
 } from '@radix-ui/themes';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+
 const ChartUIContainer = ({ children, target, economy, isOpen, setIsOpen }) => {
-  //   const [isOpen, setIsOpen] = useState(false);
-  const handleOpenModal = () => setIsOpen(true);
   const economyPercentage = ((economy - target) / target) * 100;
 
   return (
@@ -61,7 +59,7 @@ const ChartUIContainer = ({ children, target, economy, isOpen, setIsOpen }) => {
         )}
       </Flex>
       <Text size='2' color='gray'>
-        Ahead of target
+        Ahead of target Jan Feb March Apr May June July Sep Oct Nov Dec
       </Text>
       <motion.div
         layout

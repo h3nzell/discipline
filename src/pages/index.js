@@ -8,7 +8,7 @@ import {
   CardComponent,
   SelectComponent,
   LineChartContainer,
-} from '@/components/pages';
+} from '@/components';
 import { projectsData, chartData } from '@/utils';
 
 const inter = Inter({ subsets: ['latin'] });

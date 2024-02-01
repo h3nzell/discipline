@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Status = ({ status = 'default', size }) => {
   const configPaddings = {
     sm: 'p-[10px] max-w-[22px] max-h-[22px]',
