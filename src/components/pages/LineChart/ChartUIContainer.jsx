@@ -18,8 +18,8 @@ const ChartUIContainer = ({ children, target, economy, isOpen, setIsOpen }) => {
       layout
       onClick={handleOpenDetails}
       transition={{ layout: { duration: 0.5 } }}
-      className={`w-full max-w-[640px] bg-card rounded-2xl p-6 ${
-        isOpen ? 'absolute z-50 top-14 h-[700px] ' : 'relative z-49  h-[400px]'
+      className={`w-full max-w-[640px] bg-card rounded-2xl p-5 ${
+        isOpen ? 'absolute z-50 top-14 h-[700px] ' : 'relative z-49  h-[307px]'
       } `}
     >
       <Flex justify='between' width='100%' align='center'>
@@ -69,7 +69,7 @@ const ChartUIContainer = ({ children, target, economy, isOpen, setIsOpen }) => {
       </Text>
       <motion.div
         layout
-        className={`${isOpen ? 'h-[600px]' : 'h-[240px]'} m-2 max-w-max`}
+        className={`${isOpen ? 'h-[600px]' : 'h-[200px]'}  max-w-max`}
       >
         {children}
       </motion.div>

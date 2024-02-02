@@ -35,7 +35,7 @@ const LineChartContainer = ({ data }) => {
       economy={economy}
       setIsOpen={setIsOpen}
     >
-      <LineChart width={550} height={isOpen ? 550 : 250} data={data}>
+      <LineChart width={550} height={isOpen ? 550 : 200} data={data}>
         <Line type='linear' dataKey='price' stroke='#FFFFFF' />
         <CartesianGrid stroke='#ccc' strokeDasharray='1 50' />
         <XAxis dataKey='month' />
