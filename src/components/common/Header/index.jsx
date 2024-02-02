@@ -36,12 +36,18 @@ const Header = ({ percent }) => {
         </TextField.Slot>
         <TextField.Input placeholder='Search ' size='2' radius='medium' />
         <TextField.Slot>
-          <IconButton size='1' variant='ghost'>
+          <IconButton className='cursor-pointer' size='1' variant='ghost'>
             <DotsHorizontalIcon height='14' width='14' />
           </IconButton>
         </TextField.Slot>
         <TextField.Slot>
-          <IconButton color='gray' variant='outline' radius='large' size='1'>
+          <IconButton
+            className='cursor-pointer'
+            color='gray'
+            variant='outline'
+            radius='large'
+            size='1'
+          >
             S
           </IconButton>
         </TextField.Slot>
@@ -55,15 +61,21 @@ const Header = ({ percent }) => {
           <Text size='1'>{count}%</Text>
           <ProgressSlider percent={percent} />
         </Flex>
-        <IconButton variant='ghost' color='' radius='medium' size='3'>
+        <IconButton
+          size='3'
+          radius='medium'
+          variant='ghost'
+          className='cursor-pointer'
+        >
           <BellIcon color='#ADB1B8' width='16' height='16' />
         </IconButton>
         <Avatar
+          size='1'
           fallback='C'
           color='gray'
-          size='1'
           variant='soft'
           radius='medium'
+          className='cursor-pointer'
         />
       </Flex>
     </div>

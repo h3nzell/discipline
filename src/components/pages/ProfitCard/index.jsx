@@ -6,7 +6,7 @@ const ProfitCard = ({ profit, lastYearProfit }) => {
   const profitPercentage = ((profit - lastYearProfit) / lastYearProfit) * 100;
 
   return (
-    <Card size='2' className='w-[204px] h-36'>
+    <Card size='2' className='w-[200px] h-[142px]'>
       <Flex direction='column' gap='2'>
         <Text>Profit</Text>
         <Flex justify='between' align='center'>

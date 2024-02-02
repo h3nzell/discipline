@@ -33,12 +33,14 @@ const CardComponent = ({ status, className = '' }) => {
       className={`w-full  ${
         isOpen
           ? 'absolute z-50 top-14 max-w-[640px] h-[calc(100vh-152px)] '
-          : 'relative z-49 max-w-[204px] h-36'
+          : 'relative z-49 max-w-[200px] h-[142px]'
       } `}
     >
       <Card
         size={isOpen ? '4' : '2'}
-        className={`w-full h-full ${configBackgrounds[status]} cursor-pointer ${className}`}
+        className={`w-full h-full ${configBackgrounds[status]} ${
+          isOpen ? 'cursor-default' : 'cursor-pointer'
+        } ${className}`}
       >
         <Flex justify='between' align='center' width='100%'>
           <Flex gap='2' align='center'>
@@ -80,7 +82,12 @@ const CardComponent = ({ status, className = '' }) => {
             </Flex>
           </Flex>
           {isOpen && (
-            <IconButton variant='soft' color='gray' radius='full'>
+            <IconButton
+              variant='soft'
+              color='gray'
+              radius='full'
+              className='cursor-pointer'
+            >
               <Cross1Icon onClick={handleModalClose} />
             </IconButton>
           )}

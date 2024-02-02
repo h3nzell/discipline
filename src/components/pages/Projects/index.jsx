@@ -4,19 +4,19 @@ import { Status } from '..';
 
 const Projects = ({ data }) => {
   return (
-    <Card size='2' className='max-w-[420px] w-full'>
+    <Card size='2' className='max-w-[420px] max-h-[305px] w-full'>
       <Flex align='center' justify='between'>
         <Heading size='2'>Projects</Heading>
         <Button size='2' color='blue' variant='ghost'>
           View projects
         </Button>
       </Flex>
-      <Flex direction='column' gap='3' width='100%'>
+      <Flex direction='column' gap='1' width='100%'>
         <Grid
           gap='3'
           align='center'
           width='100%'
-          className='py-3 h-20 border-b border-[#101010]'
+          className='py-[10px] h-20 border-b border-[#101010]'
           style={{ gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr' }}
         >
           <Text>SuperESG</Text>
@@ -28,7 +28,7 @@ const Projects = ({ data }) => {
           gap='3'
           align='center'
           width='100%'
-          className='py-3 h-20 border-b border-[#101010]'
+          className='py-[10px] h-20 border-b border-[#101010]'
           style={{ gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr' }}
         >
           <Text>Umbrex Inc.</Text>
@@ -40,7 +40,7 @@ const Projects = ({ data }) => {
           gap='3'
           width='100%'
           align='center'
-          className='py-3 h-20 border-b border-[#101010]'
+          className='py-[10px] h-20 border-b border-[#101010]'
           style={{ gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr' }}
         >
           <Text>PriceWater..</Text>

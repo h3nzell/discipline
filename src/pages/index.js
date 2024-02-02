@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <div
-      className={`${inter.className} flex items-center gap-5 flex-col h-screen w-full bg-dashboard`}
+      className={`${inter.className}  flex items-center gap-5 flex-col w-full bg-dashboard h-full`}
     >
       <Header percent={60} />
       <div className='max-w-[640px] w-full flex items-center justify-between'>

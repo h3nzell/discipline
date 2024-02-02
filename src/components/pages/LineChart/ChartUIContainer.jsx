@@ -26,6 +26,7 @@ const ChartUIContainer = ({ children, target, economy, isOpen, setIsOpen }) => {
         <Text size='2'>Economics</Text>
         {isOpen ? (
           <IconButton
+            className='cursor-pointer'
             onClick={(e) => {
               e.stopPropagation();
               setIsOpen(false);
@@ -34,7 +35,12 @@ const ChartUIContainer = ({ children, target, economy, isOpen, setIsOpen }) => {
             <Cross1Icon />
           </IconButton>
         ) : (
-          <Button variant='ghost' color='blue' size='2'>
+          <Button
+            className='cursor-pointer'
+            variant='ghost'
+            color='blue'
+            size='2'
+          >
             Details
           </Button>
         )}
