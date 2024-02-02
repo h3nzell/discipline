@@ -1,22 +1,22 @@
 import { motion } from 'framer-motion';
 import { Cross1Icon, MinusIcon, PlusIcon } from '@radix-ui/react-icons';
-
 import {
-  Text,
-  Flex,
   Badge,
+  Flex,
+  Text,
   Button,
   Heading,
   IconButton,
 } from '@radix-ui/themes';
 
 const ChartUIContainer = ({ children, target, economy, isOpen, setIsOpen }) => {
+  const handleOpenDetails = () => setIsOpen(true);
   const economyPercentage = ((economy - target) / target) * 100;
 
   return (
     <motion.div
       layout
-      onClick={handleOpenModal}
+      onClick={handleOpenDetails}
       transition={{ layout: { duration: 0.5 } }}
       className={`w-full max-w-[640px] bg-card rounded-2xl p-6 ${
         isOpen ? 'absolute z-50 top-14 h-[700px] ' : 'relative z-49  h-[400px]'
@@ -59,7 +59,7 @@ const ChartUIContainer = ({ children, target, economy, isOpen, setIsOpen }) => {
         )}
       </Flex>
       <Text size='2' color='gray'>
-        Ahead of target Jan Feb March Apr May June July Sep Oct Nov Dec
+        Ahead of target
       </Text>
       <motion.div
         layout

@@ -17,7 +17,7 @@ const ProfitCard = ({ profit, lastYearProfit }) => {
               className='max'
               color={profitPercentage > 0 ? 'green' : 'red'}
             >
-              {eco > 0 ? (
+              {profitPercentage > 0 ? (
                 <PlusIcon width='12' height='12' />
               ) : (
                 <MinusIcon width='12' height='12' />
